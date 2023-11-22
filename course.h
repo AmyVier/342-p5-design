@@ -11,6 +11,7 @@ using namespace std;
 // forward declaration
 class Student;
 
+// Object class course holds a list of students currently in the course
 class Course {
   friend class Student;
   friend class University;
