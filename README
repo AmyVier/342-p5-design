@@ -16,4 +16,5 @@ The system take data from text file using the following format
     Student Data:
     StudentID Name1
     
-Student can 
+Student can can register for course and drop the course if wanted 
+The University can acess the course data and student data
