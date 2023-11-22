@@ -27,7 +27,7 @@ public:
 
 private:
   string name;                // name of course
-  vector<Student *> students; // list of students (sorted)
+  vector<Student *> students; // list of students (unsorted)
 };
 
 #endif
