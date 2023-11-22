@@ -17,7 +17,16 @@ class Course {
   friend class EnrollmentSystem;
   friend ostream &operator<<(ostream &out, const Course &course);
 
+public:
+  void addStudent(int studentID);       // add student to list
+  void removeStudent(int studentID);    // remove student from list
+  vector<Student *> getStudentListID(); // return sorted list of students by ID
+  // return sorted list of students by last name
+  vector<Student *> getStudentListLastName();
+
 private:
+  string name;                // name of course
+  vector<Student *> students; // list of students (sorted)
 };
 
 #endif
