@@ -21,8 +21,8 @@ public:
   void addStudent(int studentID);       // add student to list
   void removeStudent(int studentID);    // remove student from list
   vector<Student *> getStudentListID(); // return sorted list of students by ID
-  // return sorted list of students by last name
-  vector<Student *> getStudentListLastName();
+  vector<Student *> getStudentListLastName(); // return sorted list of
+                                              // students by last name
 
 private:
   string name;                // name of course
