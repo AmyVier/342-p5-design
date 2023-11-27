@@ -44,6 +44,12 @@ public:
   // Return class list sorted by id of students
   string getClassListByID(const string &courseNumber) const;
 
+  // University constructor
+  explicit University(const string &name);
+
+  // University destructor
+  virtual ~University();
+
 private:
   // name of university
   string name;
@@ -51,8 +57,6 @@ private:
   vector<Student *> students;
   // vector to store courses offered
   vector<Course *> courses;
-
-  virtual ~University();
 };
 
 #endif
