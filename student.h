@@ -50,16 +50,13 @@ private:
   string last_Name;
   int id;
   vector<Course *> enrolled_Courses;
-};
 
 public:
-Student(string first_Name, string last_Name, int id);
-Student(const Student &other);
-ostream &operator<<(ostream &out, const Student &student);
-bool dropCourse(int studentID, const string &courseNumber);
-bool addCourse(int studentID, const string &courseNumber);
-bool isInCourse(int studentID, const string &courseNumber) const;
-}
-;
+  Student(string first_Name, string last_Name, int id);
+  Student(const Student &other);
+  bool dropCourse(int studentID, const string &courseNumber);
+  bool addCourse(int studentID, const string &courseNumber);
+  bool isInCourse(int studentID, const string &courseNumber) const;
+};
 
 #endif
