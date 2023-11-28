@@ -76,12 +76,12 @@ This class is responsible for storing course information by containing/manipulat
 5. **removeStudent**: removes a student
     * parameters: a constant reference to an object of Student class
     * return value: bool value whether the remove operation was successful or not
-6. **getStudentListID**: returns a sorted list of students by ID for the getClassListByID method in the enrollment system
+6. **getClassListByID**: returns a sorted list of students by ID for the getClassListByID method in the enrollment system
     * parameters: none
-    * return value: a vector of Student pointers
-7. **getStudentListLastName**: returns a sorted list of students by last name for the getClassListByLastName method in the enrollment system
+    * return value: a string of Students in ID order
+7. **getClassListByLastName**: returns a sorted list of students by last name for the getClassListByLastName method in the enrollment system
     * parameters: none
-    * return value: a vector of Student pointers
+    * return value: a string of Students in last name order
 
 ### Additional methods:
 1. **operator<<** (friend): prints out the course name and student list
