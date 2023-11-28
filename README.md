@@ -54,5 +54,38 @@ The following methods are offered in the University class:
     * This method returns all of the students in a given course, sorted by the course number.
 
 ## Course
+This class is responsible for storing course information by containing/manipulating student data. 
+
+### The values in this class are:
+1. **name** (private): a string name of the course
+2. **students** (private): a vector consisting of Student pointers
+
+### The public methods offered by this class are:
+1. **constructor**: sets up a course with an empty student list and a default name "no name" if no name is added
+    * parameters: string name
+    * return value: N/A
+2. **copy constructor**: creates a copy of a course
+    * parameters: a constant reference to an object of Course class
+    * return value: N/A
+3. **destructor**: removes any memory leaks
+    * parameters: N/A
+    * return value: N/A
+4. **addStudent**: adds a student
+    * parameters: a constant reference to an object of Student class
+    * return value: void
+5. **removeStudent**: removes a student
+    * parameters: a constant reference to an object of Student class
+    * return value: bool value whether the remove operation was successful or not
+6. **getStudentListID**: returns a sorted list of students by ID for the getClassListByID method in the enrollment system
+    * parameters: none
+    * return value: a vector of Student pointers
+7. **getStudentListLastName**: returns a sorted list of students by last name for the getClassListByLastName method in the enrollment system
+    * parameters: none
+    * return value: a vector of Student pointers
+
+### Additional methods:
+1. **operator<<** (friend): prints out the course name and student list
+    * parameters: ostream &out, const Course &course 
+    * return value: ostream
 
 ## Student

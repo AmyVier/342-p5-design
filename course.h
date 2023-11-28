@@ -19,8 +19,11 @@ class Course {
   friend ostream &operator<<(ostream &out, const Course &course);
 
 public:
-  void addStudent(int studentID);       // add student to list
-  void removeStudent(int studentID);    // remove student from list
+  Course(string name = "no name");            // constructor
+  Course(const Course &other);                // copy constructor
+  virtual ~Course();                          // destructor
+  void addStudent(const Student &student);    // add student to list
+  bool removeStudent(const Student &student); // remove student from list
   vector<Student *> getStudentListID(); // return sorted list of students by ID
   vector<Student *> getStudentListLastName(); // return sorted list of
                                               // students by last name
