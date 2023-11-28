@@ -65,16 +65,16 @@ This class is responsible for storing course information by containing/manipulat
     * parameters: string name
     * return value: N/A
 2. **copy constructor**: creates a copy of a course
-    * parameters: an object of Course class
+    * parameters: a constant reference to an object of Course class
     * return value: N/A
 3. **destructor**: removes any memory leaks
     * parameters: N/A
     * return value: N/A
 4. **addStudent**: adds a student
-    * parameters: a reference to an object of Student class
+    * parameters: a constant reference to an object of Student class
     * return value: void
 5. **removeStudent**: removes a student
-    * parameters: a reference to an object of Student class
+    * parameters: a constant reference to an object of Student class
     * return value: bool value whether the remove operation was successful or not
 6. **getStudentListID**: returns a sorted list of students by ID for the getClassListByID method in the enrollment system
     * parameters: none
