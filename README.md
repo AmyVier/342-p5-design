@@ -76,10 +76,10 @@ This class is responsible for storing course information by containing/manipulat
 5. **removeStudent**: removes a student
     * parameters: a constant reference to an object of Student class
     * return value: bool value whether the remove operation was successful or not
-6. **getClassListByID**: returns a sorted list of students by ID for the getClassListByID method in the enrollment system
+6. **getClassListByID**: returns a string of sorted students by ID for the getClassListByID method in the enrollment system
     * parameters: none
     * return value: a string of Students in ID order
-7. **getClassListByLastName**: returns a sorted list of students by last name for the getClassListByLastName method in the enrollment system
+7. **getClassListByLastName**: returns a string of sorted students by last name for the getClassListByLastName method in the enrollment system
     * parameters: none
     * return value: a string of Students in last name order
 
