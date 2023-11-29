@@ -26,7 +26,21 @@ The University can access the course data and student data.
 2. readEnrollmentInfo
 3. addCourse
 4. getEnrolledCourses
+    * The enrollment system calls **string getEnrolledCourses(int studentID) const**:
+        * The **current university** in the enrollment system calls **string getEnrolledCourses(int studentID) const**:
+            * The **current university** checks if it has a student with the same string student ID by going through its **vector of student pointers**
+            * If this student exists, the student found will go through its **vector of enrolled courses** and return its vector of enrolled course pointers
+            * A string of enrolled courses is constructed using the vector
+            * The string of enrolled courses is returned
+        * The string of enrolled courses returned from **string getEnrolledCourses(int studentID) const** is returned
 5. getClassListByLastName
+    * The enrollment system calls **string getClassListByLastName(const string &courseNumber) const**:
+        * The **current university** checks if it has a course with the same courseNumber by going through its **vector of course pointers**
+        * The course found will call **string getClassListByLastName() const**
+            * The course will go through its **vector of student pointers**, constructing a string of sorted students by last name
+            * The string of sorted students by last name is returned
+        * The string of sorted students returned from **string getClassListByLastName() const** is returned
+
 
 
 ## University Class Description
