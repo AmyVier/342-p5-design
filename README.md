@@ -22,6 +22,13 @@ Student can register for course and drop the course if wanted.
 
 The University can access the course data and student data.
 
+1. readCourseList
+2. readEnrollmentInfo
+3. addCourse
+4. getEnrolledCourses
+5. getClassListByLastName
+
+
 ## University Class Description
 This class is responsible for managing and manipulating course and student data for the active university. It offers a multitude of methods to get information about the classes offered and the students studying in various formats.
 
